@@ -1,13 +1,59 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  max-width: 1330px;
+}
+.hide {
+  opacity: 0;
+}
+.dropzone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 0;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #eeeeee;
+  border-style: dashed;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  outline: none;
+  cursor: pointer;
+  height: 150px;
+  line-height: 150px;
+}
+.carContainter {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  flex-flow: row wrap;
+}
+.carContainter > * {
+  margin: 1% 0;
+  flex: 0 0 32%;
+}
+.carContainter > :nth-child(3n -1) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.card {
+  width: 30%;
+  position: relative;
+}
+.card-img-top {
+  height: 280px;
 }
