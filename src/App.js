@@ -1,6 +1,8 @@
 import React from "react";
 import csvToJson from "./helpers/csvToJson";
 
+import { Excel } from "./Excel";
+
 function App() {
   const [csvData, setCsvData] = React.useState(null);
 
@@ -33,9 +35,7 @@ function App() {
         <label htmlFor="inputFile" className="dropzone">
           Click to select csv files
         </label>
-
         <br />
-
         {csvData ? (
           <>
             <table className="table">
@@ -65,6 +65,11 @@ function App() {
         ) : (
           <div className="text-center">no data</div>
         )}
+
+        <br />
+        <hr />
+
+        <Excel />
       </div>
     </>
   );
